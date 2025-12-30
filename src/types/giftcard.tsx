@@ -13,5 +13,3 @@ export type OwnedGiftCardData = BaseGiftCardData & {
   mockCode: string;
   issuedAt: string;
 };
-
-export type GiftCardData = CatalogGiftCardData | OwnedGiftCardData;

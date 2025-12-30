@@ -1,5 +1,7 @@
 import { createContext, useContext, useState, useEffect } from 'react';
+import userData from '../../mocks/user.json';
 
+// This class would be adapted to be with redux instead of context / provider (global state)
 export type User = {
   id: number;
   name: string;
@@ -19,15 +21,9 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fakeUser: User = {
-      id: 1,
-      name: 'John Doe',
-      email: 'johndoe@gmail.com',
-      coins: 2000,
-    };
-
+    // simulate loading delay
     const timer = setTimeout(() => {
-      setUser(fakeUser);
+      setUser(userData.user as User);
       setLoading(false);
     }, 500);
 

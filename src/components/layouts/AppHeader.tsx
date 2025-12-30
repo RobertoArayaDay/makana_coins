@@ -19,7 +19,7 @@ export function AppHeader({ title }: AppHeaderProps) {
         >
           <ArrowLeft className='h-5 w-5' />
         </Button>
-        <h1 className='absolute left-1/2 -translate-x-1/2 text-lg font-semibold truncate text-blue-500'>
+        <h1 className='absolute left-1/2 -translate-x-1/2 text-lg font-semibold truncate text-blue-500 sm:static sm:translate-x-0 sm:left-0'>
           {title}
         </h1>
       </div>

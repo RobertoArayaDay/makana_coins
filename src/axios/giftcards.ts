@@ -4,6 +4,8 @@ import type { CatalogGiftCardData } from '../types/giftcard';
 // import type { GiftCad } from '../../types/giftcard';
 // import { client } from '.';
 
+// THIS FILE WOULD NEED TO BE CHANGED WITH THE API REAL RESPONSES. NOW ITS WORKING WITH MOCKUPS.
+
 async function fetchGiftCards(): Promise<CatalogGiftCardData[]> {
   //const response = await client.get<CatalogGiftCardData>('/giftcards');
   //const { data } = response;
@@ -25,7 +27,7 @@ async function fetchUserGiftCards() {
 
   return json.user_giftcards.map((card: any) => ({
     id: card.id,
-    kind: 'owned', // 🔴 THIS is the fix
+    kind: 'owned',
     store: card.store,
     description: card.description,
     value: card.value,

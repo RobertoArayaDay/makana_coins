@@ -22,7 +22,7 @@ export default function CatalogGiftCardOption({ store, coins, value }: Props) {
         <div className='flex flex-col items-end'>
           <div className='flex items-center gap-1'>
             <Coins className='w-6 h-6 text-orange-600' />
-            <span className='text-lg text-gray-900'>{userCoins.toLocaleString('es-CL')}</span>
+            <span className='text-lg text-gray-900'>{coins.toLocaleString('es-CL')}</span>
           </div>
           <span className='text-xs text-muted-foreground'>Coins</span>
         </div>
