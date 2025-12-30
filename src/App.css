@@ -1,0 +1,9 @@
+body {
+  height: 100%;
+  background-color: oklch(96.7% 0.003 264.542);
+}
+
+#root {
+  height: 100%;
+  background-color: inherit; /* optional */
+}

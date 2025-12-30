@@ -1,0 +1,49 @@
+{
+  "user_giftcards": [
+    {
+      "id": 201,
+      "kind": "owned",
+      "store": "Falabella",
+      "description": "Falabella Gift Card",
+      "value": 10000,
+      "mockCode": "FLB-8Q2M-K9A3",
+      "issuedAt": "2025-03-05"
+    },
+    {
+      "id": 202,
+      "kind": "owned",
+      "store": "Ripley",
+      "description": "Ripley Gift Card",
+      "value": 20000,
+      "mockCode": "RPL-7M4Q-Z8A1",
+      "issuedAt": "2025-03-08"
+    },
+    {
+      "id": 203,
+      "kind": "owned",
+      "store": "Paris",
+      "description": "Paris Gift Card",
+      "value": 5000,
+      "mockCode": "PRS-9A2K-M7Q4",
+      "issuedAt": "2025-03-12"
+    },
+    {
+      "id": 204,
+      "kind": "owned",
+      "store": "Cencosud",
+      "description": "Cencosud Gift Card",
+      "value": 10000,
+      "mockCode": "CCS-6Z1Q-8MKA",
+      "issuedAt": "2025-03-15"
+    },
+    {
+      "id": 205,
+      "kind": "owned",
+      "store": "Jumbo",
+      "description": "Jumbo Gift Card",
+      "value": 10000,
+      "mockCode": "JMB-4Q8A-ZM21",
+      "issuedAt": "2025-03-18"
+    }
+  ]
+}
