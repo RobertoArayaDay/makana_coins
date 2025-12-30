@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from 'react';
-import userData from '../../mocks/user.json';
+import type { ReactNode } from 'react';
 
 // This class would be adapted to be with redux instead of context / provider (global state)
 export type User = {
@@ -16,18 +16,24 @@ export type UserContextType = {
 
 export const UserContext = createContext<UserContextType | undefined>(undefined);
 
-export function UserProvider({ children }: { children: React.ReactNode }) {
+export function UserProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | undefined>(undefined);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // simulate loading delay
-    const timer = setTimeout(() => {
-      setUser(userData.user as User);
-      setLoading(false);
-    }, 500);
+    const fetchUser = async () => {
+      try {
+        const res = await fetch(`${import.meta.env.BASE_URL}/mocks/user.json`); // JSON must be in public/mocks/user.json
+        const json = await res.json();
+        setUser(json.user as User);
+      } catch (error) {
+        console.error('Failed to fetch user:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-    return () => clearTimeout(timer);
+    fetchUser();
   }, []);
 
   return <UserContext.Provider value={{ user, loading }}>{children}</UserContext.Provider>;
