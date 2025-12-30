@@ -3,7 +3,7 @@ import { Button } from '../../ui/button';
 import ConfirmationModalButtons from './ConfirmationModalButtons';
 import ConfirmationModalSummary from './ConfirmationModalSummary';
 import ConfirmationModalBreakdown from './ConfirmationModalBreakdown';
-import ConfirmationModalHeader from './ConfirmationModalHeader';
+import { DialogTitle } from '@radix-ui/react-dialog';
 
 type Props = {
   store: string;
@@ -19,7 +19,9 @@ export default function ConfirmationModal({ store, coins, value }: Props) {
       </DialogTrigger>
 
       <DialogContent className='space-y-6'>
-        <ConfirmationModalHeader />
+        <DialogTitle className='text-center text-blue-600 font-medium'>
+          Canjear GiftCard
+        </DialogTitle>
         <ConfirmationModalSummary
           store={store}
           value={value}

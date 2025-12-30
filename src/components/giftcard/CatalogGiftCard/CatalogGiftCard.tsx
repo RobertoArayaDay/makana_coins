@@ -3,9 +3,9 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import CatalogGiftCardOption from './CatalogGiftCardOption';
 
 const giftcardsOptions = [
-  { coins: 500, value: 5000 },
-  { coins: 1000, value: 10000 },
-  { coins: 2000, value: 20000 },
+  { id: 1, coins: 500, value: 5000 },
+  { id: 2, coins: 1000, value: 10000 },
+  { id: 3, coins: 2000, value: 20000 },
 ];
 
 type Props = {
@@ -21,9 +21,10 @@ export function CatalogGiftCard({ giftcard }: Props) {
       </CardHeader>
       <CardContent>
         <div className='flex flex-col gap-3'>
-          {giftcardsOptions.map(({ coins, value }) => {
+          {giftcardsOptions.map(({ id, coins, value }) => {
             return (
               <CatalogGiftCardOption
+                key={id}
                 store={giftcard.store}
                 coins={coins}
                 value={value}

@@ -104,3 +104,7 @@ http://localhost:5173/makana_coins/#/coins
 - React Router v6
 - Lucide React (iconos)
 - Sonner (toasts)
+
+## Video del flujo
+
+Video del flujo disponible en el siguiente link: https://youtu.be/KY5KLZXxEvc
