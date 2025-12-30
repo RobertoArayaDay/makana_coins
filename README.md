@@ -29,7 +29,7 @@ npm run dev
 Acceder a la página principal:
 
 ```
-http://localhost:5173/coins
+http://localhost:5173/makana_coins/#/coins
 ```
 
 ---
