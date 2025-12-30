@@ -9,7 +9,7 @@ import CatalogGiftCardsDescription from './CatalogGiftCardsDescription';
 
 export default function CatalogGiftCardsPage() {
   const { giftcards, loading, error } = useCatalogGiftCards();
-  const { user, loading: userLoading } = useUser();
+  const { user, loading: _ } = useUser();
 
   return (
     <>

@@ -2,7 +2,7 @@ import { Coins } from 'lucide-react';
 import { useUser } from '@/context/UserContext';
 
 export default function CatalogGiftCardsBalance() {
-  const { user, loading: userLoading } = useUser();
+  const { user, loading: _ } = useUser();
 
   const userCoins = user?.coins || 0;
   return (

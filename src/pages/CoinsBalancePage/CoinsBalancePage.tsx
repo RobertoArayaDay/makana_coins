@@ -7,7 +7,7 @@ import CoinsBalanceButtons from './CoinsBalanceButtons';
 import CoinsBalanceBalance from './CoinsBalanceBalance';
 
 export default function CoinsBalancePage() {
-  const { user, loading: userLoading } = useUser();
+  const { user, loading: _ } = useUser();
 
   return (
     <>

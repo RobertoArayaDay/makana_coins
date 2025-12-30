@@ -1,5 +1,3 @@
-import { Icon as LucideIcon } from 'lucide-react';
-
 type Props = {
   title: string;
   description: string;

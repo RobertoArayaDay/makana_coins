@@ -2,7 +2,7 @@ import { Coins } from 'lucide-react';
 import { useUser } from '@/context/UserContext';
 
 export default function CoinsBalanceBalance() {
-  const { user, loading: userLoading } = useUser();
+  const { user, loading: _ } = useUser();
   const userCoins = user?.coins || 0;
   return (
     <div className='rounded-xl border border-gray-200 bg-white p-6 space-y-4'>

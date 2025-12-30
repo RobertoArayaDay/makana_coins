@@ -8,7 +8,7 @@ import OwnedGiftCardsDescription from './OwnedGiftCardsDescription';
 
 export default function OwnedGiftCardsPage() {
   const { giftcards, loading, error } = useOwnedGiftCards();
-  const { user, loading: userLoading } = useUser();
+  const { user, loading: _ } = useUser();
 
   return (
     <>

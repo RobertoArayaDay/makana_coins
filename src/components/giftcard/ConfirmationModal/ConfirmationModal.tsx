@@ -1,5 +1,4 @@
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
-import { Separator } from '@/components/ui/separator';
 import { Button } from '../../ui/button';
 import ConfirmationModalButtons from './ConfirmationModalButtons';
 import ConfirmationModalSummary from './ConfirmationModalSummary';

@@ -1,4 +1,3 @@
-import { Coins } from 'lucide-react';
 import { Info } from 'lucide-react';
 
 export default function CatalogGiftCardsDescription() {

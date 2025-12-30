@@ -9,7 +9,7 @@ type Props = {
 };
 
 export default function CatalogGiftCardOption({ store, coins, value }: Props) {
-  const { user, loading: userLoading } = useUser();
+  const { user, loading: _ } = useUser();
   const userCoins = user?.coins || 0;
   const canRedeem = userCoins >= coins;
 
