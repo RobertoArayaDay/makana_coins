@@ -1,0 +1,52 @@
+{
+  "giftcards": [
+    {
+      "id": 1,
+      "kind": "catalog",
+      "store": "Amazon",
+      "description": "Amazon Gift Card"
+    },
+    {
+      "id": 2,
+      "kind": "catalog",
+      "store": "Spotify",
+      "description": "Spotify Premium"
+    },
+    {
+      "id": 3,
+      "kind": "catalog",
+      "store": "Netflix",
+      "description": "Netflix Subscription"
+    },
+    {
+      "id": 4,
+      "kind": "catalog",
+      "store": "Google Play",
+      "description": "Google Play Gift Card"
+    },
+    {
+      "id": 5,
+      "kind": "catalog",
+      "store": "iTunes",
+      "description": "iTunes Gift Card"
+    },
+    {
+      "id": 6,
+      "kind": "catalog",
+      "store": "Steam",
+      "description": "Steam Wallet Code"
+    },
+    {
+      "id": 7,
+      "kind": "catalog",
+      "store": "Xbox",
+      "description": "Xbox Gift Card"
+    },
+    {
+      "id": 8,
+      "kind": "catalog",
+      "store": "PlayStation",
+      "description": "PlayStation Store Card"
+    }
+  ]
+}
