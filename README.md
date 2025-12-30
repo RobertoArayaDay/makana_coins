@@ -10,10 +10,10 @@ Este proyecto está desarrollado en **React** con **Vite**, **Tailwind CSS** y *
 
 - La información de Makana Coins y giftcards es personal y privada, por lo que se accede desde el perfil del usuario.
 - Flujo al abrir la sección de saldo:
-- Ver saldo actual de Makana Coins.
-- Canjear coins por giftcards de distintas tiendas (solo una giftcard a la vez para simplificar la experiencia).
-- Consultar el historial y detalle de las giftcards recibidas.
-- Confirmar el canje mediante un modal claro y transparente, que permite validar toda la información antes de completar la compra.
+  - Ver saldo actual de Makana Coins.
+  - Canjear coins por giftcards de distintas tiendas (solo una giftcard a la vez para simplificar la experiencia).
+  - Consultar el historial y detalle de las giftcards recibidas.
+  - Confirmar el canje mediante un modal claro y transparente, que permite validar toda la información antes de completar la compra.
 
 ---
 
@@ -57,7 +57,12 @@ http://localhost:5173/coins
   - Confirmación del canje mediante modal transparente, mostrando saldo y detalles antes de comprar.
 
 - **Reducción de fricción para usuarios con baja alfabetización digital:**  
-  Controles intuitivos, feedback visual claro y pasos simples, acercando la experiencia al usuario.
+  Se diseñó un flujo simple e intuitivo, con elementos visuales y mensajes claros que guían al usuario en cada paso:
+  - **Botones importantes en negro** para destacar acciones clave, siempre visibles y accesibles.
+  - **Modal de confirmación al canjear un giftcard**, que muestra de forma clara el costo en Makana Coins y los detalles de la giftcard antes de confirmar.
+  - **Mensajes breves y directos**, sin tecnicismos, que explican las acciones que el usuario está realizando.
+  - **Feedback inmediato mediante toasts** al copiar un código de giftcard.
+  - **Íconos y colores consistentes** que ayudan a entender la función de cada elemento.
 
 - **Prevención de canjes erróneos:**  
   Modal de confirmación antes de completar el canje, con todos los detalles y el costo en coins.
@@ -88,7 +93,7 @@ http://localhost:5173/coins
 - Implementar **usuario en Redux** para manejo global de estado.
 - Evitar **prop-drilling** para giftcards; usar **context/providers** para pasar los datos de forma más fluida.
 - Agregar **iconos a cada tienda** en el catálogo para mejor identificación.
-- Usar **React Query** para manejo de queries y cache de queries, especialmente al cargar "Mis giftcards", y permitir actualización automática al comprar nuevas.
+- Usar **React Query** para manejo de queries y cache, especialmente al cargar "Mis giftcards", y actualizarlas de forma eficiente al comprar nuevas.
 
 ---
 
